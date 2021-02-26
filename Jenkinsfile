@@ -17,7 +17,7 @@ pipeline {
             sh 'mvn test'
         }
     }
-
+    
     //Deploy artifact to maven repository
     stage("Deploy Maven Artifact") {
         steps {
