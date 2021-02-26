@@ -8,13 +8,13 @@
 		<version>2.4.3</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.stucray.mst</groupId>
+	<groupId>com.stucray</groupId>
 	<artifactId>discovery-service</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>discovery-service</name>
-	<description>Demo project for Spring Boot</description>
+	<description>Spring Eureka Discovery Service</description>
 	<properties>
-		<java.version>11</java.version>
+		<java.version>15</java.version>
 		<spring-cloud.version>2020.0.1</spring-cloud.version>
 	</properties>
 	<dependencies>
@@ -58,6 +58,9 @@
 							<artifactId>lombok</artifactId>
 						</exclude>
 					</excludes>
+					<image>
+						<name>stucray/${project.artifactId}:${project.version}</name>
+					</image>
 				</configuration>
 			</plugin>
 		</plugins>
